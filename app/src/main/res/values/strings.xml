@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BudgetPlanner</string>
+    <string name="lblSpend_limit">Set Spending Limit</string>
+    <string name="lblAdd_expenses">Add Expenses</string>
+    <string name="lblAdd_income">Add Income</string>
+    <string name="lblHistory_reports">History and Reports</string>
+    <string name="lblRemains">Remains : </string>
+    <string name="lblIncome">Income : </string>
+    <string name="lblExpenses">Expenses : </string>
+    <string name="lblDashboard">DASHBOARD</string>
+    <string name="lblFrom">From :-</string>
+    <string name="lblTo">To :-</string>
+    <string name="lblPaperSize">Paper Size :-</string>
+    <string name="lblOrientation">Orientation :-</string>
+    <string name="btnGenerate">Generate</string>
+    <string name="pprA4">A4</string>
+    <string name="pprA5">A5</string>
+    <string name="oriPort">Portrait</string>
+    <string name="oriLand">Landscape</string>
+</resources>

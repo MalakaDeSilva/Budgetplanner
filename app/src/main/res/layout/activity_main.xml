@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Remain-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <!-- Left to spend / Label -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblRemains"
+                        android:textSize="40sp"
+                        android:gravity="bottom"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="50dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <!-- Left to spend / Value -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/remain_value"
+                        android:text="Rs. 10,000"
+                        android:textColor="@color/colorLightGray"
+                        android:gravity="center"
+                        android:textSize="60sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Vertical divider -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp">
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <!-- Income/ Expenses-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="3"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+
+                <!-- Income -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblIncome"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="26sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 15,000"
+                        android:textColor="@color/colorLightGray"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp"
+                        android:textStyle="bold"
+                        android:textSize="35sp"/>
+                </LinearLayout>
+
+                <!-- Horizontal divider -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical">
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="80dp"
+                        android:background="@color/colorGray" />
+                </LinearLayout>
+
+                <!-- Expenses -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/lblExpenses"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 5,000"
+                        android:textColor="@color/colorLightGray"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:paddingEnd="10dp"
+                        android:textSize="35sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Vertical divider -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp">
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/lblDashboard"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@color/colorMint"
+                android:layout_marginBottom="15dp">
+
+            </TextView>
+
+            <!-- GridLayout implementation -->
+            <!-- First Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/spend_limit"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorGrapeFruit"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:contentDescription="@string/lblSpend_limit"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_limit" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrapeFruitDark"
+                        android:padding="8dp"
+                        android:text="@string/lblSpend_limit"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:id="@+id/expenses"
+                    android:background="@color/colorBitterSweet"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/lblAdd_expenses"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_expenses"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorBitterSweetDark"
+                        android:padding="8dp"
+                        android:text="@string/lblAdd_expenses"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:id="@+id/income"
+                    android:background="@color/colorGrass"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/lblAdd_income"
+                        android:src="@drawable/ic_income" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrassDark"
+                        android:padding="8dp"
+                        android:text="@string/lblAdd_income"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:id="@+id/history_reports"
+                    android:background="@color/colorBlueJeans"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/lblHistory_reports"
+                        android:src="@drawable/ic_report_history"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorBlueJeansDark"
+                        android:padding="8dp"
+                        android:text="@string/lblHistory_reports"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
