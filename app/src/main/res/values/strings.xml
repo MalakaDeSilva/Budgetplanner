@@ -17,4 +17,5 @@
     <string name="pprA5">A5</string>
     <string name="oriPort">Portrait</string>
     <string name="oriLand">Landscape</string>
+    <string name="fldDate">Enter Date</string>
 </resources>

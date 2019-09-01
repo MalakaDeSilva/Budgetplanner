@@ -53,7 +53,8 @@
                         android:text="@string/lblFrom"
                         android:textColor="@color/colorBlack"
                         android:textSize="25sp"
-                        android:paddingStart="40dp"/>
+                        android:paddingStart="40dp"
+                        android:paddingEnd="0dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Enter Date" />
+                        android:hint="@string/fldDate"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -93,7 +94,8 @@
                         android:text="@string/lblTo"
                         android:textColor="@color/colorBlack"
                         android:textSize="25sp"
-                        android:paddingStart="40dp"/>
+                        android:paddingStart="40dp"
+                        android:paddingEnd="0dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -109,7 +111,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Enter Date" />
+                        android:hint="@string/fldDate" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -132,7 +134,8 @@
                         android:text="@string/lblPaperSize"
                         android:textColor="@color/colorBlack"
                         android:textSize="25sp"
-                        android:paddingStart="40dp"/>
+                        android:paddingStart="40dp"
+                        android:paddingEnd="0dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -192,7 +195,8 @@
                         android:text="@string/lblOrientation"
                         android:textSize="25sp"
                         android:textColor="@color/colorBlack"
-                        android:paddingStart="40dp"/>
+                        android:paddingStart="40dp"
+                        android:paddingEnd="0dp"/>
                 </LinearLayout>
 
                 <LinearLayout
