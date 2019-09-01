@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent histnrep = new Intent(MainActivity.this, HistoryandReports.class);
                 startActivity(histnrep);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 
