@@ -1,14 +1,13 @@
 package com.bb.budgetplanner;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private LinearLayout income, cred_limit, history_reports, expenses;
@@ -29,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
                 Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bounce);
                 income.startAnimation(animation);
 
-                Toast.makeText(MainActivity.this, "You clicked Add Income.", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, Add_income.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 
@@ -39,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bounce);
                 cred_limit.startAnimation(animation);
 
-                Toast.makeText(MainActivity.this, "You clicked Set Credit Limit.", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, Spending_Limit.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 
@@ -61,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bounce);
                 expenses.startAnimation(animation);
 
-                Toast.makeText(MainActivity.this, "You clicked Add Expenses.", Toast.LENGTH_LONG).show();
+                Intent expenses = new Intent(MainActivity.this, Expenses.class);
+                startActivity(expenses);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
     }

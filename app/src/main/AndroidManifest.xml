@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +23,24 @@
         </activity>
         <activity
             android:name=".HistoryandReports"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Expenses"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Update_income"
+            android:parentActivityName=".View_income" />
+        <activity
+            android:name=".View_income"
+            android:parentActivityName=".Income" />
+        <activity
+            android:name=".Income"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Add_income"
+            android:parentActivityName=".Income" />
+
+        <activity android:name=".Spending_Limit"
             android:parentActivityName=".MainActivity" />
     </application>
 

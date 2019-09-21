@@ -33,4 +33,29 @@
     <string name="menu_send">Send</string>
     <string name="Open">open</string>
     <string name="Close">close</string>
+
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="purpose">Purpose</string>
+    <string name="payment">Payment Method</string>
+    <string name="comments">Comments</string>
+    <string name="bill">Bill Details</string>
+    <string-array name="purpose">
+        <item>Others</item>
+        <item>Rent Paid</item>
+        <item>Gift</item>
+        <item>Food</item>
+        <item>Hotel</item>
+        <item>Shopping</item>
+        <item>Groceries</item>
+        <item>Gas/Petrol</item>
+        <item>Travel</item>
+        <item>Utility bills</item>
+        <item>Entertainment</item>
+    </string-array>
+    <string-array name="payment_method">
+        <item>Cash</item>
+        <item>Card</item>
+        <item>Cheque</item>
+    </string-array>
 </resources>
